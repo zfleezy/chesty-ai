@@ -7,7 +7,7 @@ st.title("🦅 ChestyAI")
 st.subheader("USMC Professional Assistant")
 
 # Paste your working API Key here!
-API_KEY = "AIzaSyAksgnc_Bxskoz65F2Bi5hx5d4zQOWgXGQ"
+API_KEY = st.secrets["AIzaSyAksgnc_Bxskoz65F2Bi5hx5d4zQOWgXGQ"]
 
 # 1. Initialize the AI
 client = genai.Client(api_key=API_KEY)
