@@ -30,7 +30,7 @@ if prompt:
     try:
         # We use 'generate_content' instead of 'chats.create' to avoid the "closed" error
         response = client.models.generate_content(
-            model="models/gemini-1.5-flash",
+model="gemini-1.5-flash-latest",
             contents=prompt,
             config={'system_instruction': 'You are ChestyAI, a USMC assistant.'}
         )
